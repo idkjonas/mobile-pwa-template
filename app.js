@@ -1,9 +1,11 @@
 function showTab(element, tabId) {
   // Hide all tab content elements
-  document.getElementsByClassName("tab-pane").forEach(tabPane => tabPane.classList.remove("selected"));
+  Array.from(document.getElementsByClassName("tab-pane"))
+    .forEach(tabPane => tabPane.classList.remove("selected"));
 
   // Remove 'active' class from all tab buttons
-  document.getElementsByClassName("tab-button").forEach(tabButton => tabButton.classList.remove("selected"));
+  Array.from(document.getElementsByClassName("tab-button"))
+    .forEach(tabButton => tabButton.classList.remove("selected"));
 
   // Show the selected tab content
   document.getElementById(tabId).classList.add("selected");
