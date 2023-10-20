@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+.app-view {
+  display: grid;
+  position: relative;
+  grid-template-rows: 1fr 50px;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Nav bar */
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  padding: 0 10px;
+  box-shadow: 0 0 5px gray;
+}
+
+.container {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  background-color: var(--clr-background);
+}
+
+/* Hide tab by default */
+.tab-pane {
+  display: none;
+  height: 100%;
+}
+
+.tab-pane.selected {
+  display: block;
+}
+
+.tab-content {
+  padding: 10px;
+}
+
+/* Tab bar */
+
+.tab-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0 10px;
+  gap: 1rem;
+  box-shadow: 0 0 5px gray;
+  
+}
+
+.tab-button {
+  all: unset;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  gap: 3px;
+  font-weight: 600;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.tab-button.selected {
+  color: blue;
+}
+
+@media (display-mode: standalone) {
+  .app-view {
+    grid-template-rows: 1fr 83px;
+  }
+
+  .tab-bar {
+    padding-bottom: 33px;
+  }
+}

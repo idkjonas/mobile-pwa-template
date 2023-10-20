@@ -1,0 +1,6 @@
+{
+  "name": "App template",
+  "short_name": "App template",
+  "start_url": "index.html",
+  "display": "standalone"
+}
