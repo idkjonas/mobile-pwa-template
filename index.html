@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>App template</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+  <main class="app-view">
+    <div class="container">
+      
+      <div id="tab1" class="tab-pane">
+        <div class="nav-bar">Tab 1</div>
+        <div class="tab-content">
+          <h1>First tab</h1>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione dolorum voluptatem voluptatum.</p>
+        </div>
+      </div>
+
+      <div id="tab2" class="tab-pane">
+        <div class="nav-bar">Tab 2</div>
+        <div class="tab-content">
+          <h1>Second tab</h1>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione dolorum voluptatem voluptatum.</p>
+        </div>
+      </div>
+
+      <div id="tab3" class="tab-pane">
+        <div class="nav-bar">Tab 3</div>
+        <div class="tab-content">
+          <h1>Third tab</h1>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione dolorum voluptatem voluptatum.</p>
+        </div>
+      </div>
+
+      <div id="tab4" class="tab-pane">
+        <div class="nav-bar">Tab 4</div>
+        <div class="tab-content">
+          <h1>Fourth tab</h1>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione dolorum voluptatem voluptatum.</p>
+        </div>
+      </div>
+      
+    </div>
+
+    <nav class="tab-bar">
+      <button class="tab-button" onclick="showTab('tab1')">Tab 1</button>
+      <button class="tab-button" onclick="showTab('tab2')">Tab 2</button>
+      <button class="tab-button" onclick="showTab('tab3')">Tab 3</button>
+      <button class="tab-button" onclick="showTab('tab4')">Tab 4</button>
+    </nav>
+    
+  </main>
+
+  <script src="app.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
